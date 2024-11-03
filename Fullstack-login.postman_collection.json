@@ -1,0 +1,337 @@
+{
+	"info": {
+		"_postman_id": "e7241f3d-4847-4923-9010-a76e9546d68d",
+		"name": "Fullstack-login",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31142752"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"kit888@gmail.com\",\r\n    \"password\" : \"1234\",\r\n    \"fname\" : \"kittipit\",\r\n    \"lname\" : \"yungjaruen\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3333/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "barcode",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"barcodePass\": \"6503052410295\",\r\n    \"bookingDate\": \"2024-04-30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3333/barcode",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"barcode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "barcode id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"barcodeid\": \"6503052410295\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3333/barcodeid",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"barcodeid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"barcodeLogout\": \"6503052410295\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3333/LogOut",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"LogOut"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3333/deleteLastRow",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"deleteLastRow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Date Check",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookingcheck\": \"2024-04-30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3333/barcode/check",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"barcode",
+						"check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCheck",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookingcheck\": \"2024-04-30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3333/barcode/getCheck",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"barcode",
+						"getCheck"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Status Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"StatusUpdate\": \"Available\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3333/StatusUpdate",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"StatusUpdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Status\": \"Available\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3333/Status",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"Status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"statusCheck \": \"2024-04-30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3333/getStatus",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"getStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"kittipit@gmail.com\",\r\n    \"password\" : \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3333/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authen",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpdHRpcGl0QGdtYWlsLmNvbSIsImlhdCI6MTcwMDIwMjAzMn0.y4Me1fySrHq064RYgnd_GsvOXLVSn57CIT5xxUBAO7s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3333/authen",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"authen"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
